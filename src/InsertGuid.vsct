@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+  <Include href="KnownImageIds.vsct"/>
+  <Include href="YannsEssentials.vsct"/>
+
+  <Commands package="InsertGuidPackage">
+    <Groups>
+      <Group guid="InsertGuidCommandSet" id="InsertGroup" priority="0x0000" />
+      <Group guid="InsertGuidCommandSet" id="InsertCommands" priority="0x0000" />
+    </Groups>
+
+    <Menus>
+      <Menu guid="InsertGuidCommandSet" id="InsertDropDown" type="MenuController" priority="0x0000">
+        <Strings>
+          <ButtonText>Insert Commands</ButtonText>
+        </Strings>
+      </Menu>
+    </Menus>
+
+    <Buttons>
+      <Button guid="InsertGuidCommandSet" id="InsertGuidCommand" type="Button" priority="0x0001">
+        <Parent guid="InsertGuidCommandSet" id="InsertCommands" />
+        <Icon guid="ImageCatalogGuid" id="InsertClause"/>
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>FixMenuController</CommandFlag>
+        <Strings>
+          <ButtonText>Insert Guid</ButtonText>
+        </Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+
+  <CommandPlacements>
+    <CommandPlacement guid="InsertGuidCommandSet" id="InsertCommands" priority="0x0000">
+      <Parent guid="YannsEssentialsCommandSet" id="YannsEssentialsMenu" />
+    </CommandPlacement>
+
+    <CommandPlacement guid="InsertGuidCommandSet" id="InsertDropDown" priority="0x0500">
+      <Parent guid="InsertGuidCommandSet" id="InsertGroup" />
+    </CommandPlacement>
+
+    <CommandPlacement guid="InsertGuidCommandSet" id="InsertCommands" priority="0x0500">
+      <Parent guid="InsertGuidCommandSet" id="InsertDropDown" />
+    </CommandPlacement>
+
+  </CommandPlacements>
+
+  <Symbols>
+    <GuidSymbol name="InsertGuidPackage" value="{15429751-4477-4d4b-9317-a1c8f76e9d92}" />
+
+    <GuidSymbol name="InsertGuidCommandSet" value="{16be331d-1f33-42a1-864f-56ecccd07734}">
+      
+      <IDSymbol name="InsertGroup" value="0x0100" />
+      <IDSymbol name="InsertDropDown" value="0x0101" />
+      <IDSymbol name="InsertCommands" value="0x0102" />
+
+      <IDSymbol name="InsertGuidCommand" value="0x0105" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>
