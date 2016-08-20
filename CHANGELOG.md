@@ -1,7 +1,9 @@
 # Roadmap
 
 - [ ] Add a way to select various formats for the guid
-- [ ] Detect if the selected text is a valid guid, then change "Insert Guid" to "Regenerate Guid"
+- [ ] Detect if the selected text is a valid guid, then change text to "Regenerate Guid"
+- [ ] Detect multi-selection and change command text to "Insert Guid**s**" or "Regenerate Guids"
+ if selection has valid guids
 
 Features that have a checkmark are complete and available for
 download in the
