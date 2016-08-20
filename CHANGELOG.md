@@ -14,6 +14,16 @@ download in the
 These are the changes to each version that has been released
 on the official Visual Studio extension gallery.
 
+## v0.3
+
+**2016-08-20**
+
+- Changed extension name
+  - from *Luminous Essentials*
+  - to *Yann's Essentials*
+- Moved *Insert Guid* command to *Yann's Essentials* menu
+- Fixed bug in ReplaceSelectedText 
+
 ## v0.2.1
 
 **2016-08-04**

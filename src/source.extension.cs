@@ -11,7 +11,7 @@ namespace InsertGuid
         public const string Name = "Yann's Essentials - InsertGuid";
         public const string Description = "The simplest and fastest way of inserting a new GUID dircetly into your code, without leaving the code editor.";
         public const string Language = "en-US";
-        public const string Version = "0.3.1";
+        public const string Version = "0.3";
         public const string Author = "Yann Duran";
         public const string Tags = "";
     }
