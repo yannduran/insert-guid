@@ -1,11 +1,11 @@
-# Luminous Essentials - Insert Guid
+# Yann's Essentials - Insert Guid
 
 [![Build status](https://ci.appveyor.com/api/projects/status/hv6uyc059rqbc6fj?svg=true)](https://ci.appveyor.com/project/madskristensen/extensibilitytools)
 
 Download this extension from the [VS Gallery](https://visualstudiogallery.msdn.microsoft.com/b0cbfde4-9b7a-4a8e-96d9-a689d37b2279)
 or get the [CI build](http://vsixgallery.com/extension/b0cbfde4-9b7a-4a8e-96d9-a689d37b2279/).
 
-<!------------------------------------------->
+---------------------------------------
 
 **The easiest and simplest way of inserting a new GUID into your code**.
 
@@ -32,7 +32,7 @@ To insert a guid using this extension:
 
 >- simply right-click where you want to insert the guid
 >- or select some text that you want to replace with a guid and right-click that selected text
->- select *Insert Guid* from the context menu
+>- select *Insert Guid* from *Yann's Essentials* in the context menu
 
 ><img src="art/Inserting.png" alt="Inserting a guid" />
 
@@ -50,7 +50,7 @@ To insert multiple guids at a time:
 
 >- use *Alt-Up* or *Alt-Down* to make a muli-selection
 >- right-click the selected code (or blank lines)
->- select *Insert Guid* from the context menu
+>- select *Insert Guid* from *Yann's Essentials* in the context menu
 
 >A new guid for each line of the multiple selection has been inserted into your code for you.
 
